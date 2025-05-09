@@ -32,4 +32,16 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleBtn.addEventListener('click', () => {
     navMenu.classList.toggle('active');
   });
+
+  // Redirigir al hacer click en el campo de búsqueda
+  const busqueda = document.getElementById('busqueda');
+  busqueda.addEventListener('focus', () => {
+    window.location.href = "pagina1.html"; // Redirige a pagina1.html
+  });
+
+  // Redirigir al hacer click en el ícono (nav-toggle)
+  const navToggle = document.querySelector('.nav-toggle');
+  navToggle.addEventListener('click', () => {
+    window.location.href = "index.html"; // Redirige a index.html
+  });
 });
