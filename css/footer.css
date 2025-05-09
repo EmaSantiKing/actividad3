@@ -1,0 +1,21 @@
+footer {
+  background-color: var(--color-oscuro);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .redes {
+  margin-top: 10px;
+}
+
+footer .redes a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+footer {
+    flex-shrink: 0;
+  }
+  

@@ -1,0 +1,145 @@
+/* Contenedor de detalles del producto */
+.producto-detalle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 40px; /* más espacio entre imagen e info */
+  height: auto;
+}
+
+/* Imagen del producto (izquierda) */
+.imagen-producto {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-producto img {
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Información del producto (derecha) */
+.info-producto {
+  flex: 1 1 40%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-producto h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.info-producto h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2ecc71;
+}
+
+.contacto {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Menús desplegables */
+.desplegables {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+details {
+  background-color: #f0f0f0;
+  padding: 10px;
+  width: 300px;
+  border-radius: 8px;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+details p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .producto-detalle {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .imagen-producto img {
+    width: 70%;
+  }
+
+  .info-producto {
+    width: 80vw;
+    align-items: center;
+    text-align: center;
+  }
+
+  .desplegables {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  details {
+    width: 90%;
+  }
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+@media (max-width: 768px) {
+  .producto-detalle {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .imagen-producto,
+  .info-producto {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .info-producto {
+    align-items: center;
+  }
+
+  .desplegables {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  details {
+    width: 90%;
+  }
+}
